@@ -1,2 +1,5 @@
 # ignore ALL .pdf files
 *.pdf
+# ignore the output of the generator
+algorithms/**/*.txt
+data/**/*.txt
