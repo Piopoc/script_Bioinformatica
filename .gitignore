@@ -1,5 +1,5 @@
 # ignore ALL .pdf files
 *.pdf
 # ignore the output of the generator
-algorithms/**/*.txt
+algoritmi/**/*.txt
 data/**/*.txt
