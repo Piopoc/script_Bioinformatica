@@ -7,6 +7,7 @@
 
 import java.io.*;
 import java.util.*;
+import java.util.stream.Stream;
 
 public class HashTableIndexing {
 
@@ -92,6 +93,9 @@ public class HashTableIndexing {
 
             // gets hash_table
             Map<String, List<Integer>> hashTable = getHashTable(sequence, k);
+
+            Stream<Map.Entry<String, List<Integer>>> sorted = hashTable.entrySet().stream().sorted(Map.Entry.comparingByKey());
+            sorted.forEach(System.out::println);
 
             // gets positions
             List<Integer> positions = findPattern(sequence, pattern, hashTable, k);
