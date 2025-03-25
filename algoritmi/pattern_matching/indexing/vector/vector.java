@@ -1,7 +1,7 @@
 /*
     La tecnica di indicizzazione vector<pattern, position> utilizza il preprocessing della sequenza per analizzare e ottenere le posizioni dei pattern nella sequenza.
     Questo approccio utilizza più memoria rispetto alla ricerca KMP ed è estremamente meno efficiente in termini di tempo, anche se il vettore è ordinato e viene utilizzato l'algoritmo di ricerca binaria.
-    Per cercare in una sequenza di 10 milioni di caratteri, il tempo necessario è di circa 40 secondi (con una lunghezza del pattern di 10).
+    Per cercare in una sequenza di 10 mila caratteri, il tempo necessario è di circa 25 millisecondi (con una lunghezza del pattern di 5).
 */
 
 import java.io.*;
