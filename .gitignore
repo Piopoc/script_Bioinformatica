@@ -2,3 +2,5 @@
 *.pdf
 # ignore the output of the generator
 **/*.txt
+# ignore ALL .cpp files
+*.cpp
